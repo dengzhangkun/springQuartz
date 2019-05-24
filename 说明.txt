@@ -1,0 +1,12 @@
+功能实现目的：
+按指定时间执行启动和停止任务
+
+功能说明：
+1. 此项目为springboot搭建的,运行java文件BootdoApplication启动项目
+2. 接口调用入口为：http://localhost:8888/common/job/changeJobStatus  参数为id=xx(数据库主键id值),cmd=xx(启动值为"start",
+停止值为"stop")
+3. 接口调用方法位置： JobController.changeJobStatus()
+4. 定时任务启动后，最终执行的方法位置： WelcomeJob.execute()
+
+
+类：CronUtil    cron与date互转工具类

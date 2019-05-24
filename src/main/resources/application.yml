@@ -1,0 +1,21 @@
+server:
+  session-timeout: 1800
+  port: 8888
+
+
+security:
+  basic:
+    enabled: false
+spring:
+  profiles:
+    active: dev
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: mybatis/**/*Mapper.xml
+  typeAliasesPackage: com.bootdo.**.domain
+
+
+
